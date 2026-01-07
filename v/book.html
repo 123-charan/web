@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book a Call – EKA</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="logo">EKA</div></header>
+
+<section class="section">
+<h1>Book a strategy call</h1>
+<p>This helps us understand your brand before we talk.</p>
+
+<form onsubmit="sendWhatsApp(event)">
+<label class="label">Your name</label><input id="name" required>
+
+<label class="label">Service needed</label>
+<select id="service" required>
+<option>Social Media Handling</option>
+<option>Content Creation</option>
+<option>Brand Strategy</option>
+<option>Full Growth Package</option>
+</select>
+
+<label class="label">Primary platform</label>
+<select id="platform" required>
+<option>YouTube</option>
+<option>Instagram</option>
+<option>Facebook</option>
+<option>All Platforms</option>
+</select>
+
+<label class="label">Preferred date</label><input id="date" type="date" required>
+
+<label class="label">Preferred time</label>
+<select id="time" required>
+<option>Morning (9–12)</option>
+<option>Afternoon (12–4)</option>
+<option>Evening (4–7)</option>
+</select>
+
+<label class="label">Brief about your brand</label><textarea id="msg" rows="4" required></textarea>
+
+<button class="btn">Send Booking Request</button>
+</form>
+</section>
+</body>
+</html>
